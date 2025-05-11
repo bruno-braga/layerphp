@@ -1,0 +1,15 @@
+{
+    "name": "layerphp/framework",
+    "autoload": {
+        "psr-4": {
+            "Layerphp\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno",
+            "email": "brunobraga@protonmail.com"
+        }
+    ],
+    "require": {}
+}
