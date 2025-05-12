@@ -1,6 +1,6 @@
 <?php
 
-namespace Layerphp\Framework\Http\Controllers;
+namespace LayerPHP\Http\Controllers;
 
 class TestController
 {

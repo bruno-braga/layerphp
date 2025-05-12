@@ -1,6 +1,6 @@
 <?php
 
-namespace Layerphp\Framework\Handlers;
+namespace LayerPHP\Handlers;
 
 interface Handler
 {

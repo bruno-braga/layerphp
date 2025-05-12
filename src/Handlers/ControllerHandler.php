@@ -1,8 +1,8 @@
 <?php
 
-namespace Layerphp\Framework\Handlers;
+namespace LayerPHP\Handlers;
 
-use Layerphp\Framework\Http\Controllers\ControllerResolver;
+use LayerPHP\Http\Controllers\ControllerResolver;
 
 class ControllerHandler extends AbstractHandler
 {

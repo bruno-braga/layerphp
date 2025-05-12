@@ -2,10 +2,10 @@
 
 require '../vendor/autoload.php';
 
-use Layerphp\Framework\Http\Request;
-use Layerphp\Framework\Http\Controllers\ControllerResolver;
+use LayerPHP\Http\Request;
+use LayerPHP\Http\Controllers\ControllerResolver;
 
-use Layerphp\Framework\Handlers\ControllerHandler;
+use LayerPHP\Handlers\ControllerHandler;
 
 $req = new Request($_SERVER);
 

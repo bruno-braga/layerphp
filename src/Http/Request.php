@@ -1,6 +1,6 @@
 <?php
 
-namespace Layerphp\Framework\Http;
+namespace LayerPHP\Http;
 
 class Request
 {
