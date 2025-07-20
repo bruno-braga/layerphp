@@ -6,15 +6,21 @@ use LayerPHP\Http\Controllers\ControllerResolver;
 
 class ControllerHandler extends AbstractHandler
 {
-	public function handle($req)
-	{
-		$controllerResolver = new ControllerResolver($req->getUri());
-		$c = $controllerResolver->getController();
+    public function handle($req)
+    {
+        $uri = $req->getUri();
 
-		if ($req === "Nut") {
-			return "Squirrel: I'll eat the " . $req . ".\n";
-		} else {
-			return parent::handle($req);
-		}
-	}
+        $controllerResolver = new ControllerResolver($uri);
+        $controllerMethod = $controllerResolver->getMethod();
+
+        $c = $controllerResolver->getController();
+
+        $hasMethod = method_exists($c, $controllerMethod);
+
+        if (!$hasMethod) {
+            return http_response_code(404);
+        }
+
+        $c->{$controllerMethod}();
+    }
 }
